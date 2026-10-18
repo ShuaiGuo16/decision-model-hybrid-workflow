@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title description">
+<title id="title">Hybrid workflow sequence</title>
+<desc id="description">A user submits a task to Python. Python repeatedly reads the browser page, asks a decision model to choose an operation, calls an LLM when text is needed, and executes the operation through Playwright MCP. Python returns the result to the user.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="context-stroke" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<filter id="header-shadow" x="-20%" y="-40%" width="140%" height="200%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#243345" flood-opacity="0.09" /></filter></defs>
+<style>
+  text { font-family: 'Segoe UI', Arial, sans-serif; fill: #243345; }
+  .label { font-size: 21px; font-weight: 500; }
+  .header { font-size: 23px; font-weight: 650; }
+  .group { font-size: 17px; font-weight: 650; }
+</style>
+<rect width="1280" height="798" fill="white" />
+<rect x="235" y="194.75" width="1000" height="475" rx="18" fill="#f5f7fc" stroke="#cbd4e5" stroke-width="1.6" />
+<rect x="260" y="454.1" width="950" height="130.15" rx="13" fill="#e8f0ff" stroke="#b7cbef" stroke-width="1.5" />
+
+<line x1="100" y1="99.75" x2="100" y2="755.25" stroke="#cbd4df" stroke-width="1.3" stroke-dasharray="4 8" />
+<rect x="38" y="37.05" width="124" height="53.2" rx="13" fill="#f4efe5" stroke="#d9cbb4" stroke-width="1.5" filter="url(#header-shadow)" />
+<text x="100" y="70.3" text-anchor="middle" class="header" style="fill:#6e593a">User</text>
+<line x1="330" y1="99.75" x2="330" y2="755.25" stroke="#cbd4df" stroke-width="1.3" stroke-dasharray="4 8" />
+<rect x="244" y="37.05" width="172" height="53.2" rx="13" fill="#246b58" stroke="#246b58" stroke-width="1.5" filter="url(#header-shadow)" />
+<text x="330" y="70.3" text-anchor="middle" class="header" style="fill:#ffffff">Python</text>
+<line x1="600" y1="99.75" x2="600" y2="755.25" stroke="#cbd4df" stroke-width="1.3" stroke-dasharray="4 8" />
+<rect x="488" y="37.05" width="224" height="53.2" rx="13" fill="#e5edf2" stroke="#c1d0dc" stroke-width="1.5" filter="url(#header-shadow)" />
+<text x="600" y="70.3" text-anchor="middle" class="header" style="fill:#304f65">Playwright MCP</text>
+<line x1="860" y1="99.75" x2="860" y2="755.25" stroke="#cbd4df" stroke-width="1.3" stroke-dasharray="4 8" />
+<rect x="757" y="37.05" width="206" height="53.2" rx="13" fill="#7042c2" stroke="#7042c2" stroke-width="1.5" filter="url(#header-shadow)" />
+<text x="860" y="70.3" text-anchor="middle" class="header" style="fill:#ffffff">Decision model</text>
+<line x1="1140" y1="99.75" x2="1140" y2="755.25" stroke="#cbd4df" stroke-width="1.3" stroke-dasharray="4 8" />
+<rect x="1069" y="37.05" width="142" height="53.2" rx="13" fill="#2d69b4" stroke="#2d69b4" stroke-width="1.5" filter="url(#header-shadow)" />
+<text x="1140" y="70.3" text-anchor="middle" class="header" style="fill:#ffffff">LLM</text>
+<rect x="251" y="205.2" width="211" height="30.4" fill="#e4e9f4" rx="7" /><text x="260" y="227.05" class="group" style="fill:#465877">Repeat until finished</text>
+<rect x="276" y="461.7" width="207" height="30.4" fill="#d6e5ff" rx="7" /><text x="284" y="483.55" class="group" style="fill:#2a5993">When text is needed</text>
+<line x1="100" y1="152" x2="330" y2="152" stroke="#3d6972" stroke-width="2.5" marker-end="url(#arrow)" />
+<rect x="186" y="119.7" width="58" height="23.75" rx="4" fill="white" />
+<text x="215" y="138.7" text-anchor="middle" class="label">Task</text>
+<line x1="330" y1="273.6" x2="600" y2="273.6" stroke="#3d6972" stroke-width="2.5" marker-end="url(#arrow)" />
+<rect x="409.75" y="241.3" width="110.5" height="23.75" rx="4" fill="#f5f7fc" />
+<text x="465" y="260.3" text-anchor="middle" class="label">Read page</text>
+<line x1="600" y1="324.9" x2="330" y2="324.9" stroke="#3d6972" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+<rect x="388.75" y="292.6" width="152.5" height="23.75" rx="4" fill="#f5f7fc" />
+<text x="465" y="311.6" text-anchor="middle" class="label">Page snapshot</text>
+<line x1="330" y1="382.85" x2="860" y2="382.85" stroke="#7042c2" stroke-width="2.5" marker-end="url(#arrow)" />
+<rect x="503" y="350.55" width="184" height="23.75" rx="4" fill="#f5f7fc" />
+<text x="595" y="369.55" text-anchor="middle" class="label" style="fill:#6337b1">Choose operation</text>
+<line x1="860" y1="431.3" x2="330" y2="431.3" stroke="#7042c2" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+<rect x="492.5" y="399" width="205" height="23.75" rx="4" fill="#f5f7fc" />
+<text x="595" y="418" text-anchor="middle" class="label" style="fill:#6337b1">Selected operation</text>
+<line x1="330" y1="525.35" x2="1140" y2="525.35" stroke="#2d69b4" stroke-width="2.5" marker-end="url(#arrow)" />
+<rect x="658.75" y="493.05" width="152.5" height="23.75" rx="4" fill="#e8f0ff" />
+<text x="735" y="512.05" text-anchor="middle" class="label" style="fill:#255f9f">Generate text</text>
+<line x1="1140" y1="569.05" x2="330" y2="569.05" stroke="#2d69b4" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+<rect x="706" y="536.75" width="58" height="23.75" rx="4" fill="#e8f0ff" />
+<text x="735" y="555.75" text-anchor="middle" class="label" style="fill:#255f9f">Text</text>
+<line x1="330" y1="639.35" x2="600" y2="639.35" stroke="#3d6972" stroke-width="2.5" marker-end="url(#arrow)" />
+<rect x="367.75" y="607.05" width="194.5" height="23.75" rx="4" fill="#f5f7fc" />
+<text x="465" y="626.05" text-anchor="middle" class="label">Execute operation</text>
+<line x1="330" y1="728.65" x2="100" y2="728.65" stroke="#3d6972" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+<rect x="175.5" y="696.35" width="79" height="23.75" rx="4" fill="white" />
+<text x="215" y="715.35" text-anchor="middle" class="label">Result</text>
+</svg>

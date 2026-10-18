@@ -1,0 +1,11 @@
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+node_modules/
+.npm-cache/
+.browser-cache/
+.playwright-mcp/
